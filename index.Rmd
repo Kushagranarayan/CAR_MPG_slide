@@ -1,0 +1,41 @@
+---
+title: "Car MPG Predictor"
+author: "Your Name"
+job: null
+framework: io2012
+highlighter: highlight.js
+hitheme: tomorrow
+widgets: []
+mode: selfcontained
+---
+
+## Overview
+
+This Shiny app predicts the **Miles Per Gallon (MPG)** for a car based on weight and horsepower using the `mtcars` dataset.
+
+---
+
+## Features
+
+- Interactive sliders for horsepower and weight  
+- Predicts MPG using a linear model  
+- Instant output with clear design  
+
+---
+
+## App Preview
+
+![App Screenshot](assets/screenshot.png)
+
+---
+
+## Model Code
+
+```r
+model <- lm(mpg ~ wt + hp, data = mtcars)
+predict(model, newdata = data.frame(wt = 3, hp = 110))
+
+
+
+
+
